@@ -1,0 +1,170 @@
+
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Efectivo_Equivalentes" },
+    ultimo: { $last : "$Cuentas_cobrar_Corrientes" },
+    maximo: { $max : "$Propiedad_Planta_Equipo" },
+    minimo: { $min : "$Patrimonio_Total" },
+    suma: { $sum : "$Prima_Emision" },
+    promedio: { $avg : "$Pasivos_Corrientes_Totales" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Pasivos_Corrientes_Totales" },
+    ultimo: { $last : "$Pasivos_Corrientes_Totales" },
+    maximo: { $max : "$Pasivos_Corrientes_Totales" },
+    minimo: { $min : "$Pasivos_Corrientes_Totales" },
+    suma: { $sum : "$Pasivos_Corrientes_Totales" },
+    promedio: { $avg : "$Pasivos_Corrientes_Totales" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Prima_Emision" },
+    ultimo: { $last : "$Prima_Emision" },
+    maximo: { $max : "$Prima_Emision" },
+    minimo: { $min : "$Prima_Emision" },
+    suma: { $sum : "$Prima_Emision" },
+    promedio: { $avg : "$Prima_Emision" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Patrimonio_Total" },
+    ultimo: { $last : "$Patrimonio_Total" },
+    maximo: { $max : "$Patrimonio_Total" },
+    minimo: { $min : "$Patrimonio_Total" },
+    suma: { $sum : "$Patrimonio_Total" },
+    promedio: { $avg : "$Patrimonio_Total" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Propiedad_Planta_Equipo" },
+    ultimo: { $last : "$Propiedad_Planta_Equipo" },
+    maximo: { $max : "$Propiedad_Planta_Equipo" },
+    minimo: { $min : "$Propiedad_Planta_Equipo" },
+    suma: { $sum : "$Propiedad_Planta_Equipo" },
+    promedio: { $avg : "$Propiedad_Planta_Equipo" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Cuentas_cobrar_Corrientes" },
+    ultimo: { $last : "$Cuentas_cobrar_Corrientes" },
+    maximo: { $max : "$Cuentas_cobrar_Corrientes" },
+    minimo: { $min : "$Cuentas_cobrar_Corrientes" },
+    suma: { $sum : "$Cuentas_cobrar_Corrientes" },
+    promedio: { $avg : "$Cuentas_cobrar_Corrientes" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Efectivo_Equivalentes" },
+    ultimo: { $last : "$Efectivo_Equivalentes" },
+    maximo: { $max : "$Efectivo_Equivalentes" },
+    minimo: { $min : "$Efectivo_Equivalentes" },
+    suma: { $sum : "$Efectivo_Equivalentes" },
+    promedio: { $avg : "$Efectivo_Equivalentes" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Inventarios_Corrientes" },
+    ultimo: { $last : "$Activos_Corrientes_Totales" },
+    maximo: { $max : "$Propiedad_Planta_Equipo" },
+    minimo: { $min : "$NIT" },
+    suma: { $sum : "$Otros_Activos_Nofinancieros_Nocorrientes" },
+    promedio: { $avg : "$Total_Activos_Nocorrientes" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Total_Activos_Nocorrientes" },
+    ultimo: { $last : "$Total_Activos_Nocorrientes" },
+    maximo: { $max : "$Total_Activos_Nocorrientes" },
+    minimo: { $min : "$Total_Activos_Nocorrientes" },
+    suma: { $sum : "$Total_Activos_Nocorrientes" },
+    promedio: { $avg : "$Total_Activos_Nocorrientes" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Otros_Activos_Nofinancieros_Nocorrientes" },
+    ultimo: { $last : "$Otros_Activos_Nofinancieros_Nocorrientes" },
+    maximo: { $max : "$Otros_Activos_Nofinancieros_Nocorrientes" },
+    minimo: { $min : "$Otros_Activos_Nofinancieros_Nocorrientes" },
+    suma: { $sum : "$Otros_Activos_Nofinancieros_Nocorrientes" },
+    promedio: { $avg : "$Otros_Activos_Nofinancieros_Nocorrientes" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$NIT" },
+    ultimo: { $last : "$NIT" },
+    maximo: { $max : "$NIT" },
+    minimo: { $min : "$NIT" },
+    suma: { $sum : "$NIT" },
+    promedio: { $avg : "$NIT" }
+    }}
+])
+
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Propiedad_Planta_Equipo" },
+    ultimo: { $last : "$Propiedad_Planta_Equipo" },
+    maximo: { $max : "$Propiedad_Planta_Equipo" },
+    minimo: { $min : "$Propiedad_Planta_Equipo" },
+    suma: { $sum : "$Propiedad_Planta_Equipo" },
+    promedio: { $avg : "$Propiedad_Planta_Equipo" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Activos_Corrientes_Totales" },
+    ultimo: { $last : "$Activos_Corrientes_Totales" },
+    maximo: { $max : "$Activos_Corrientes_Totales" },
+    minimo: { $min : "$Activos_Corrientes_Totales" },
+    suma: { $sum : "$Activos_Corrientes_Totales" },
+    promedio: { $avg : "$Activos_Corrientes_Totales" }
+    }}
+])
+
+db.APP.aggregate([
+  { $group: {
+    _id:0, 
+    primero: { $first : "$Inventarios_Corrientes" },
+    ultimo: { $last : "$Inventarios_Corrientes" },
+    maximo: { $max : "$Inventarios_Corrientes" },
+    minimo: { $min : "$Inventarios_Corrientes" },
+    suma: { $sum : "$Inventarios_Corrientes" },
+    promedio: { $avg : "$Inventarios_Corrientes" }
+    }}
+])
